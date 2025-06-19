@@ -1,9 +1,8 @@
-import asyncio
 from bot import CMD
 from pyrogram import Client, filters
 from bot.helpers.translations import lang
-from bot.helpers.utils.auth_check import get_chats
 from bot.helpers.utils.auth_check import check_id, get_chats
+
 from bot.helpers.database.postgres_impl import users_db, admins_db, chats_db
 
 @Client.on_message(filters.command(CMD.START))
